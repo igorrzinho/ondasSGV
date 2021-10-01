@@ -1,0 +1,72 @@
+/* variaveis */
+:root{
+    --azulEscuro:#14283e;
+    --azulMedio:#216082;
+    --azulClaro:#97DAFE ;
+    --cinzaClaro:#C4C4C4;
+    --cinzaEscuro:#858585;
+}
+/* style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--azulEscuro);
+}
+
+header,
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-color: var(--cinzaClaro);
+    position: relative;
+}
+
+h1{
+    border:5px solid var(--cinzaEscuro);
+    padding: 10px 30px;
+}
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.wave1 {
+    animation: moveWave1 3s ease-in-out infinite alternate;
+}
+
+.wave2 {
+    animation: moveWave2 3s 1.5s ease-in-out infinite alternate;
+}
+
+.wave3 {
+    animation: moveWave3 3s 1s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave1 {
+    from {
+        transform: translateX(-2000px);
+    }
+}
+
+@keyframes moveWave2 {
+    from {
+        transform: translateX(-1800px);
+    }
+}
+
+@keyframes moveWave3 {
+    from {
+        transform: translateX(-1600px);
+    }
+} 
